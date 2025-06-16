@@ -8,4 +8,6 @@ app.set('port', process.env.PORT || 4000)
 
 app.use(morgan('dev'))
 
+app.use(require('./routers/employees.router'))
+
 module.exports = app;
